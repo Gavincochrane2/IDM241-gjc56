@@ -23,11 +23,12 @@ body h1, h2{
     line-height: 60px;
     display: flex;
     justify-content: center;
-    background-color: lightgray;
+    background-color: rgb(36, 36, 36);
     margin: auto;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
     border-radius: 10px;
+    color: white;
 }
 
 main {
@@ -73,7 +74,7 @@ img {
 }
 a {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .heading { 
