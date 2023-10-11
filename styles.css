@@ -8,13 +8,13 @@ html {
     display: flex;
     justify-content: center;
   justify-items: center;
-  align-items: center;
+
   box-sizing: border-box;
 flex-wrap: wrap;
 border-radius: 10px;
 background-color: rgb(36, 36, 36);
 padding: 30px;
-text-align: center;
+
 justify-content: center;
 background-size: cover;
 }
@@ -31,6 +31,10 @@ body h1, h2{
     color: white;
 }
 
+.Trigger {
+    background-color: rgb(36, 36, 36);
+}
+
 main {
     display: flex;
     flex-direction: row;
@@ -41,6 +45,11 @@ ul {
     display: flex;
     flex-direction: column;
     list-style: none;
+    line-height: 50px;
+}
+
+li .title {
+    font-weight: bold;
 }
 
 .Loops {
@@ -79,4 +88,8 @@ a {
 
 .heading { 
     border-radius: 30px;
+}
+
+.title{
+    text-decoration: underline;
 }
