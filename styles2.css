@@ -4,7 +4,7 @@
     padding: 10px;
     background-size: contain;
     max-width: fit-content;
-    padding-bottom: 300px;
+    padding-bottom: 100px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -68,6 +68,13 @@ div .interaction:hover ~ div {
   background-color: green;
   color: black;
 }
+
+.interaction:hover p,
+.interaction:hover h2,
+.interaction:hover h3 {
+  color: black; 
+}
+
 
 .trigger {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -158,4 +165,12 @@ a {
 
 .title{
   text-decoration: underline;
+}
+
+.example .interaction img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 70%;
+  align-self: center;
 }
