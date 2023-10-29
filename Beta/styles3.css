@@ -1,0 +1,116 @@
+html {
+
+}
+
+.trigger {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(101, 207, 114);
+    display: flex;
+    justify-content: left;
+  justify-items: left;
+
+  box-sizing: border-box;
+flex-wrap: wrap;
+border-radius: 10px;
+background-color: rgb(36, 36, 36);
+padding: 30px;
+
+justify-content: left;
+background-size: cover;
+}
+
+body h1, h2{ 
+    line-height: 60px;
+    display: flex;
+    justify-content: left;
+    background-color: rgb(36, 36, 36);
+    margin: auto;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    border-radius: 10px;
+    color: white;
+}
+
+.Trigger {
+    background-color: rgb(36, 36, 36);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    line-height: 50px;
+}
+
+li .title {
+    font-weight: bold;
+}
+
+.Loops {
+    flex-direction: column;
+}
+
+body p{
+
+
+}
+.border {
+    display: flex;
+    align-items: left; 
+    background-color: rgb(36, 36, 36); 
+    padding: 10px; 
+    border: 3px;
+    border-radius: 30px;
+    border-width: 30px;
+    border-color: rgb(36, 36, 36);
+    line-height: 18px;
+    flex-direction: row;
+    border-radius: ;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+div.heading{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.size {
+   margin: auto;
+}
+div.heading h1 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: fit-content;
+}
+
+img {
+    max-width: 80%;
+}
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.heading { 
+    border-radius: 30px;
+}
+
+.title{
+    text-decoration: underline;
+}
