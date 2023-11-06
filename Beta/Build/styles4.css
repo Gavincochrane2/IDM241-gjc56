@@ -1,0 +1,258 @@
+html {
+
+}
+
+.trigger {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(101, 207, 114);
+    display: flex;
+    justify-content: left;
+  justify-items: left;
+
+  box-sizing: border-box;
+flex-wrap: wrap;
+border-radius: 10px;
+background-color: rgb(36, 36, 36);
+padding: 30px;
+
+justify-content: left;
+background-size: cover;
+}
+
+body h1, h2{ 
+    line-height: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: left;
+    background-color: rgb(36, 36, 36);
+    margin: auto;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    border-radius: 10px;
+    color: white;
+}
+
+.Trigger {
+    background-color: rgb(36, 36, 36);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    line-height: 50px;
+}
+
+li .title {
+    font-weight: bold;
+}
+
+.Loops {
+    flex-direction: column;
+}
+
+body p{
+
+
+}
+.border {
+    display: flex;
+    align-items: left; 
+    background-color: rgb(36, 36, 36); 
+    padding: 10px; 
+    border: 3px;
+    border-radius: 30px;
+    border-width: 30px;
+    border-color: rgb(36, 36, 36);
+    line-height: 18px;
+    flex-direction: row;
+    border-radius: ;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+div.heading{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.size {
+   margin: auto;
+}
+div.heading h1 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: fit-content;
+}
+
+img {
+    max-width: 80%;
+}
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.heading { 
+    border-radius: 30px;
+}
+
+.title{
+    text-decoration: underline;
+}
+
+.custom-button {
+    background-color: green;
+    color: rgb(0, 0, 0);
+    border: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 10px 20px;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.5s;
+    margin-top: 25px;
+    font-size: larger;
+    max-width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+   /* background-color: green;
+    color: rgb(0, 0, 0);
+    border: 3px;
+    border-style: solid;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s, background-color 0.3s;*/
+  }
+
+  .custom-button::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 2;
+    transition: transform 0.5s, opacity 0.5s;
+    transform: translateY(100%);
+  }
+  button {
+    z-index: 0;
+  }
+.custom-button:hover::after {
+    color: black;
+}
+  
+  .custom-button:hover::before {
+    transform: translateY(0);
+    font-display: initial;
+    opacity: 1;
+    content: "Download";
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .interaction {
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 10px;
+    background-size: contain;
+    max-width: fit-content;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+p, h2, h3.center {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+@keyframes colorChange {
+    0% {
+      background-color: black;
+      color: white;
+    }
+    100% {
+      background-color: rgb(101, 207, 114);
+      color: black;
+    }
+  }
+  div .interaction:hover {
+    animation-name: colorChange; 
+    animation-duration: 0s; 
+    cursor: pointer; 
+    color: black;
+    
+  }
+  div .interaction:hover,
+div .interaction:hover ~ div {
+  background-color: green;
+  color: black;
+}
+
+.interaction:hover p,
+.interaction:hover h2,
+.interaction:hover h3 {
+  color: black; 
+}
+  
+  /* Animation for radial color transition */
+  /*.custom-button::before {
+    content: '';
+    position: absolute;
+    background: radial-gradient(ellipse at center, white, transparent);
+    width: 300%;
+    height: 300%;
+    top: 100%;
+    left: 50%;
+    transition: top 0.4s ease-out;
+    z-index: 0;
+  }
+  
+  .custom-button:hover::before {
+    top: 0;
+  }
+  
+  /* Adjust the button appearance on hover */
+  /*.custom-button:hover {
+    color: rgb(0, 0, 0);
+    background-color: white;
+  }*/
+ 
+  
+  
+  
+  
+  
