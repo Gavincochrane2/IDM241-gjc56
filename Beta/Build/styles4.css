@@ -173,6 +173,7 @@ a {
     align-items: center;
     text-align: center;
     padding-top: 20px;
+    cursor: pointer;
   }
 
   .interaction {
@@ -211,8 +212,7 @@ p, h2, h3.center {
   }
   div .interaction:hover {
     animation-name: colorChange; 
-    animation-duration: 0s; 
-    cursor: pointer; 
+    animation-duration: 0s;  
     color: black;
     
   }
