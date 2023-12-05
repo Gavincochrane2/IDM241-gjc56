@@ -159,7 +159,7 @@ a {
   .custom-button::before {
     content: 'Download';
     position: absolute;
-    bottom: 0;
+   
     left: 0;
     width: 100%;
     height: 100%;
@@ -167,6 +167,7 @@ a {
     z-index: 2;
     transition: transform 0.5s, opacity 0.5s;
     transform: translateY(100%);
+  
   }
   button {
     z-index: 0;
@@ -254,12 +255,13 @@ div.desc img{
   }
   div .interaction:hover {
     animation-name: colorChange; 
-    animation-duration: 1s;  
+    animation-duration: ease-in-out;  
     color: black;
     
   }
   div .interaction:hover,
 div .interaction:hover ~ div {
+  animation-duration: 1s;
   background-color: green;
   color: black;
 }
