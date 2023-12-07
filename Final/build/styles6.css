@@ -52,12 +52,17 @@ main {
 ul {
     display: flex;
     flex-direction: column;
-    list-style: none;
+    list-style:circle;
     line-height: 50px;
+}
+li.title::marker {
+  opacity: 0%;
+  color: rgb(36, 36, 36);
 }
 
 li .title {
     font-weight: bold;
+    list-style: none;
 }
 
 .Loops {
@@ -89,6 +94,7 @@ div.heading{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 10px;
 }
 .size {
    margin: auto;
@@ -98,6 +104,7 @@ div.heading h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 div.block {
@@ -167,6 +174,7 @@ a {
     z-index: 2;
     transition: transform 0.5s, opacity 0.5s;
     transform: translateY(100%);
+    color: black;
   
   }
   button {
@@ -174,7 +182,8 @@ a {
   }
 
   .custom-button:focus{
-    content: none;
+    content: 'Download';
+    color: white;
   }
 .custom-button:hover::after {
     color: black;
@@ -189,6 +198,21 @@ a {
     text-align: center;
     padding-top: 20px;
     cursor: pointer;
+  }
+
+  #animationToggle:checked + .custom-button {
+    animation-play-state: running; /* Resume the animation when the checkbox is checked */
+    background-color: green; /* Change to a different color or add loading text if desired */
+  }
+  
+  .hidden-checkbox {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    pointer-events: none;
+  }
+  
+  #animationToggle:not(:checked) + .custom-button {
+    animation: none; /* Stop the animation when the checkbox is not checked */
   }
 
   .interaction {
@@ -249,7 +273,7 @@ div.desc img{
       color: white;
     }
     100% {
-      background-color: rgb(101, 207, 114);
+      background-color: green;
       color: black;
     }
   }
@@ -257,6 +281,7 @@ div.desc img{
     animation-name: colorChange; 
     animation-duration: ease-in-out;  
     color: black;
+    animation-direction: alternate;
     
   }
   div .interaction:hover,
@@ -270,6 +295,13 @@ div .interaction:hover ~ div {
 .interaction:hover h2,
 .interaction:hover h3 {
   color: black; 
+}
+
+
+@keyframes fadeOut {
+  to {
+    background-color: black;
+  }
 }
 
 @media screen and (min-width: 1035px) and (max-width: 1172px) {
@@ -299,12 +331,13 @@ div .interaction:hover ~ div {
   border-style: solid;
   border-radius: 6px;
   border-color: black;
- 
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   cursor: pointer;
   transition: background-color 0.3s;
+  animation: shrinkAndSpin 1.5s infinite paused; /* Initially paused */
 }
 
-.custom-button:focus {
+label.custom-button:focus {
   animation: shrinkAndSpin 1.5s infinite; /* Adjust the duration as needed */
   background-color: rgb(0, 0, 0); /* Change to a different color or add loading text if desired */
   content: "Downloading";
