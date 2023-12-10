@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study - gjc56</title>
+    <link rel="stylesheet" href="general7.css">
+    
+</head>
+<body>
+    <div class="hero">
+    <img src="images/hero2.png" alt="Hero image"></div>
+    <h2>Overview</h2>
+    <p>This project was a culmination of everything I learned in microinteractions class applied to an imporvement of the download panel seen on WhatsApp's website. I created animaitons for 5 aspects of the panel: Hover on the panel, Hover off the panel, Hover on the button, Hover off the button, and clicking on the button. I created fade in animations for the panel changing it from black to green, a slide in and out animation for the button where it changed color from green to white, and a spinning loading animation for the button after the user clicks on it. I ran into a few issues with spacing in my animations but was able to analyze the code, find the line that caused the issues, and delete or fix it. My design decisions were influenced by WhatsApps established style guide which includes their colors and font styles but the animations were made to be changes of the existing ones used on the website. Throughout the 10 week time frame we were given I was able to create meaningful microinteractions that improved the user experience of downloading the app WhatsApp.</p>
+    
+    <h2>Context and Challenge</h2>
+    <p> <strong>Background:</strong> This was a project assigned to me for my microinteractions class at Drexel University. We learned about the value of microinteractions and how they can contribute to the user experience.</p>
+        <p><strong>Timeline:</strong> This was a 10 week long project </p>
+        <p><strong>The problem:</strong> This project was designed to take an existing microinteraction, in my case it was the WhatsApp download panel, and redesign it to make it more user friendly and engaging for the user. I took inspiration from the original design and made it my own by adding animations to make it more clear as to what each button did on the panel.</p>
+       <p> <strong>Goals and Metrics:</strong> The goals of this project were to improve on the existing microinteractions that were on the WhatsApp donwlaod panel and to make the experience more engaging without adding anything that serves no purpose. These interactions all have to serve a purpose and have a reason for being there otherwise it would be just for entertainment. Because this project was not actually used to download the app the performance metrics are a little hard to judge but, if it were implimented onto the WhatsApp website, the metrics for success would be as follows: The number of downloads, time spent on the download page, number of clicks on the download button, and nnumber of time each animation plays. </p>
+    <hr>
+       <h2>Process and Insight</h2>
+    <div class="wrap">
+    <div class="image">
+    <img src="images/Alphabefore.png" alt="alpha build before photo">
+    </div>
+    <div class="image">
+    <img src="images/Screen Shot 2023-12-09 at 3.43.49 PM.jpg" alt="alpha build after photo">
+    </div>
+</div>
+    <p> From the start of this process I had chosen to improve on the WhatsApp download panel so I had an existing template to take inspiration from. When doing research I noticed that the existing interaction was clunky and a little jarring especially when the user hovered over the download panel. This lead me to start iterating on what I could do to fix these issues. I came up with the idea to incorperate an animation that eases the color change in after the user hovers to make the process smoother and more inviting. </p> 
+    <hr>
+    <video src="images/DownloadButtonBeta.mp4" controls loop>play</video>
+    <div class="caption">
+    <caption>Download button animation in beta with spacing issue</caption></div>
+    <video src="images/DownloadButtonFinal.mp4" controls loop></video>
+    <div class="caption">
+    <caption>Download button animation in the final</caption></div>
+    <p> After adding the panel animation I had to adress the next interaction which was hovering over the download button. The existing animation was a radial color change from the center of the button which I felt was a little distracting for the user. One thing we focused on in class was that each interaction had to have a purpose and based on this information I decided to make that animation simpler so it didn't distract the user but at the same time it would still draw the users attention to the button. From there I decided to just have the animation slide in from the bottom and change color to white. This decision was made because the contrast from the dark green that the button starts with, to the white button with black text immediatly draws the eye to the button. I had trouble with the spacing originally where the word "download" would animate too high up on the screen and look out of place. After a few days of playing around with it I found a line of code "top=0" that was causing the issue so I deleted it and luckily the spacing on the final was fixed.</p>
+        <hr>
+<video src="images/DownloadButtonClick.mp4" controls loop></video>
+
+<p>The last interaction I had to address was the loading animation after the user clicked on the button. This was an original animation that I added as there was no existing interaction on click for this button. I wanted to show the user that the computer was downloading the app behind the scenes and decided that the best way to do this was by adding a spinning icon. I found a few examples on CodePen.io but nothing that looked the way I wanted it to so I decided to ask chatgpt to build me a template. It was able to create an animation for me but it was bouncy and seemed too over the top for this purpose. Using pieces of the CodePen examples and what ChatGPT gave me I was able to slow the animation down and eliminate the bouncing to make the simple spinning animation that is in the final product.</p>
+
+
+    <h2>The Solution</h2>
+    <a href="http://gavinc.us/idm241/final/build" target="_blank">Click here to see the live website</a>
+    <video src="images/Final.mov" controls loop class="final"></video>
+    <p>The final project is a combination of all of the assets described before, put together to form one cohesive panel that includes 5 microinteractions. The color choices on this panel were made to reflect the brand identity of WhatsApp where their signature colors are green, black, and white. This also influenced my font choices as on WhatsApps website they consitantly use a Sans-Serif font. This led me to choose the font 'Segoe UI'. This font is easy on the eyes and very easy to read which contributes to the user experience as well as reflects the brands style guide. </p>
+    <h2>The Result</h2>
+    <p>Overall, this project was a success and was able to teach me a lot about what a microinteraction is, why we use them, and the importance of microinteractions to improving the user experience. Based on feedback given to me from friends and professors I feel like I was able to succesfully reflect the personality of WhatsApp while creating meaningful microinteractions that were an improvement on the existing interactions on the WhatsApp website. If I were to do this project again there are a few things I would have done differently. First is that I would have made the border of the download button animate around the button, I would have changed this because the border moving is more similar to the loading animations that we see on websites and apps every day so the user would be more familiar with this. I also would have changed my approach to the animations, this is because when I started the project I was trying to use a fade in animation for the panel when I should have just stuck with what I knew which was keyframe animations. Although I ran into some problems throughout this process, I was able to overcome all of them and create a final project that acheived the goals I had for it and I was proud of.</p>
+    
+</body>
+</html>
